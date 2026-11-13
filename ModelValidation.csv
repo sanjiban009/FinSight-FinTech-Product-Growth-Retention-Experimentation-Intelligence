@@ -1,0 +1,2 @@
+metric,sample_size,positive_rate,roc_auc,pr_auc,brier_score,train_snapshots,predictive_target,scope,model
+Temporal holdout (Sep 2026 features → Oct 2026 inactivity),3623,0.5669,0.7702,0.7937,0.1973,40812,No recorded app activity in subsequent calendar month,Synthetic data only; not validated on real customers,Logistic regression with standard scaling and one-hot encoding

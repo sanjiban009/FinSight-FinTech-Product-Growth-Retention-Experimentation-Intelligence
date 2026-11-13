@@ -1,0 +1,57 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <meta name="theme-color" content="#091322" />
+  <meta name="description" content="FinSight — a synthetic FinTech product growth, retention, and experimentation intelligence portfolio dashboard. Seven interactive pages. Built with HTML, JavaScript and Plotly." />
+  <title>FinSight | FinTech Product Intelligence</title>
+  <link rel="icon" type="image/svg+xml" href="assets/favicon.svg" />
+  <link rel="stylesheet" href="assets/css/dashboard.css" />
+</head>
+<body>
+<div class="app-shell">
+  <aside class="sidebar" id="sidebar">
+    <div class="logo-block">
+      <div class="logo-mark"><svg width="28" height="28" viewBox="0 0 28 28" fill="none"><path d="M4 21V7h7l4 7-4 7H4Z" stroke="#70F8D0" stroke-width="2.5" stroke-linejoin="round"/><path d="M17 7h7v14h-7" stroke="#8DA9FF" stroke-width="2.5" stroke-linecap="round"/><path d="M10 14h9" stroke="white" stroke-width="2.4" stroke-linecap="round"/></svg></div>
+      <div><strong>FinSight<span class="brand-dot">.</span></strong><small>PRODUCT INTELLIGENCE</small></div>
+    </div>
+    <div class="portfolio-badge"><span class="tiny-pulse"></span> LIVE INTERACTIVE PORTFOLIO</div>
+    <div class="nav-heading">WORKSPACE <span>7 PAGES</span></div>
+    <nav id="side-nav" aria-label="Dashboard pages">
+      <button class="nav-link active" data-page="executive"><span class="nav-icon">◫</span><span>Executive Overview</span><span class="nav-num">01</span></button>
+      <button class="nav-link" data-page="funnel"><span class="nav-icon">⌁</span><span>Conversion Funnel</span><span class="nav-num">02</span></button>
+      <button class="nav-link" data-page="retention"><span class="nav-icon">▦</span><span>Retention & Cohorts</span><span class="nav-num">03</span></button>
+      <button class="nav-link" data-page="engagement"><span class="nav-icon">◈</span><span>Product Engagement</span><span class="nav-num">04</span></button>
+      <button class="nav-link" data-page="experiments"><span class="nav-icon">⚗</span><span>Experimentation Lab</span><span class="nav-num">05</span></button>
+      <button class="nav-link" data-page="marketing"><span class="nav-icon">◎</span><span>Marketing ROI</span><span class="nav-num">06</span></button>
+      <button class="nav-link" data-page="predictive"><span class="nav-icon">✧</span><span>Predictive Insights</span><span class="nav-num">07</span></button>
+    </nav>
+    <div class="sidebar-spacer"></div>
+    <div class="sidebar-panel"><div class="panel-icon">✦</div><div><strong>Built for decisions.</strong><p>From product behavior to measurable growth opportunities.</p></div></div>
+    <div class="sidebar-footer"><span>PROJECT BY</span><strong>SANJIBAN DAS</strong><small>Business Intelligence · Product Analytics</small></div>
+  </aside>
+  <main class="main-area">
+    <header class="topbar">
+      <div class="topbar-left"><button class="mobile-toggle" id="mobile-toggle" aria-label="Toggle menu">☰</button><span class="bread">PORTFOLIO / <b>FINSIGHT</b></span><span class="topbar-separator"></span><span id="bread-page">Executive Overview</span></div>
+      <div class="topbar-right"><span class="source-chip">◉ 100% SYNTHETIC DATA</span><span class="date-chip" id="asof-text">As of 13 Nov 2026</span><a class="github-top" href="https://github.com/sanjiban009" rel="noopener noreferrer" target="_blank" title="Author's GitHub profile">⌘ GitHub</a></div>
+    </header>
+    <div class="content-wrap">
+      <div class="hero-area"><div class="hero-copy"><div class="eyebrow"><span class="eyebrow-line"></span> FINTECH PRODUCT & GROWTH ANALYTICS <span class="eyebrow-star">✦</span></div><h1 id="page-title">Executive Command Center</h1><p id="page-subtitle">A unified view of acquisition, activation, retention and business performance.</p></div><div class="hero-right"><div class="hero-status"><span class="live-indicator"></span> ANALYTICS ENGINE ACTIVE</div><div class="hero-reference">FY ALIGNED · INR REPORTING · 7 INTERACTIVE MODULES</div></div></div>
+      <section class="filter-box" aria-label="Interactive dashboard filters"><div class="filter-top"><div class="filter-heading"><span class="filter-symbol">◫</span> GLOBAL EXPLORATION FILTERS <small>Apply to all dashboard pages</small></div><div class="filter-actions"><span class="filter-count" id="filter-count">Viewing all segments</span><button type="button" class="mini-action" id="reset-btn">↻ Reset filters</button><button type="button" class="mini-action" id="export-btn">⇩ Export filtered CSV</button></div></div><div class="filter-grid">
+        <label><span>FINANCIAL YEAR</span><select id="fy-filter"><option value="FY2026-27">FY 2026–27 · YTD</option><option value="FY2025-26">FY 2025–26</option><option value="FY2024-25">FY 2024–25</option><option value="ALL">All financial years</option></select></label>
+        <label><span>ACQUISITION CHANNEL</span><select id="channel-filter"><option value="ALL">All channels</option></select></label>
+        <label><span>REGION</span><select id="region-filter"><option value="ALL">All regions</option></select></label>
+        <label><span>DEVICE</span><select id="device-filter"><option value="ALL">All devices</option></select></label>
+        <label><span>BEHAVIOR SEGMENT</span><select id="segment-filter"><option value="ALL">All segments</option></select></label>
+      </div><div class="filter-caption"><span>▸ TIP: Click supported chart bars to cross-filter the dashboard.</span><span id="period-info">INDIAN FY · 1 APR 2026 – 13 NOV 2026</span></div></section>
+      <section id="page-content" aria-live="polite"><div class="loading">Initializing interactive analytics…</div></section>
+      <footer class="footer"><div><span class="footer-brand">FINSIGHT<span class="brand-dot">.</span></span> Independent portfolio case study · Synthetic data, not CoinDCX operational data</div><div><a href="https://sanjiban009-analytics.redrat130.chatgpt.site/" target="_blank" rel="noopener noreferrer">Portfolio ↗</a><a href="https://github.com/sanjiban009" target="_blank" rel="noopener noreferrer">GitHub ↗</a><span>© 2026 Sanjiban Das</span></div></footer>
+    </div>
+  </main>
+</div>
+<script src="assets/vendor/plotly.min.js"></script>
+<script src="data/dashboard-data.js"></script>
+<script src="assets/js/dashboard.js"></script>
+</body>
+</html>

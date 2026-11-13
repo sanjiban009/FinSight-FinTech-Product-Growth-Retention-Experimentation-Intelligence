@@ -1,4 +1,5 @@
-# FinSight-FinTech-Product-Growth-Retention-Experimentation-Intelligence
+# FinSight — FinTech Product Growth, Retention & Experimentation Intelligence
+
 **Seven-page interactive FinTech product analytics portfolio dashboard**, inspired by the analytical questions asked of Business Analysts and Product Analysts at digital-asset trading platforms and other fintechs.
 
 > **Independent simulated case study.** Not affiliated with, commissioned by, sponsored by or based on internal data from CoinDCX. Every number is generated for demonstration. The project is *not* a live cryptocurrency trading service.
@@ -21,11 +22,12 @@ Growing a fintech app requires understanding which users activate, how onboardin
 | **06 Marketing ROI** | Which channels acquire users efficiently? | Paid CAC, cost per first trade, spend trends, conversion, spend allocation, *illustrative* fee-contribution proxy |
 | **07 Predictive Insights** | Which users are likely to stop being active next month? | Logistic-regression churn scores, high/medium/low risk bands, segment & channel drill-down, holdout ROC-AUC, PR-AUC, Brier |
 
+![Cohort Intelligence](screenshots/03_retention_linkedin.jpg)
 
 ## Quick start — no installation needed
 
 1. Download the project ZIP and **extract it completely**.
-2. Open ** FinSight _ FinTech Product Intelligence.html ** in Chrome, Edge, Safari or Firefox. The dashboard bundles Plotly locally, with no API calls, login, external font requests or internet requirement.
+2. Open **`index.html`** in Chrome, Edge, Safari or Firefox. The dashboard bundles Plotly locally, with no API calls, login, external font requests or internet requirement.
 3. Use the **Financial Year, Channel, Region, Device and Behavior Segment** selectors. Click relevant bars to cross-filter, or choose **Export filtered CSV**.
 4. Navigate with the left sidebar or press keys **1–7**.
 5. To modify the demo, edit the CSV/data generator and rerun `tools/generate_dataset.py` (requires Python dependencies). Data files must retain their relative directory names.
@@ -66,7 +68,13 @@ The sample assigns synthetic IDs, not names or contact information, and makes no
 
 `Product Analytics` · `Business Intelligence` · `HTML` · `CSS` · `JavaScript` · `Plotly.js` · `Python` · `Excel` · `Cohort Retention` · `Funnel Analysis` · `A/B Testing` · `Marketing Attribution` · `Statistical Testing` · `Predictive Modeling` · `Executive Storytelling` · `FY Reporting`
 
+## How to publish on GitHub Pages
 
+Open **[docs/GITHUB_PUBLISHING.md](docs/GITHUB_PUBLISHING.md)** for click-by-click steps. Suggested repo name: `fintech-product-growth-intelligence`.
+
+## LinkedIn showcase
+
+Upload `screenshots/00_linkedin_project_cover.jpg` as the first image followed by `01_...` through `07_...` as a carousel, and copy the post from **[docs/LINKEDIN_POST.txt](docs/LINKEDIN_POST.txt)**. Add your published GitHub Pages and GitHub repository URLs only after deployment.
 
 ## Statistical honesty and caveats
 
@@ -82,5 +90,7 @@ Read the data dictionary and model card for definitions and methodology.
 
 **Sanjiban Das** — Business Intelligence & Product Analytics
 
-**Code license:** MIT (see LICENSE). All synthetic data and analytics are intended for teaching and portfolio demonstration.
+- Portfolio: https://sanjiban009-analytics.redrat130.chatgpt.site/
+- GitHub: https://github.com/sanjiban009
 
+**Code license:** MIT (see LICENSE). All synthetic data and analytics are intended for teaching and portfolio demonstration.

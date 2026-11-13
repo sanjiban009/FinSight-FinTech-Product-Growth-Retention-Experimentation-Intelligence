@@ -1,0 +1,39 @@
+{
+  "as_of": "2026-11-13",
+  "fy_begin_month": 4,
+  "simulated": true,
+  "seed": 261113,
+  "period_start": "2024-04-01",
+  "generation_note": "Entirely synthetic; generated independently for skills demonstration. Not actual CoinDCX metrics, customers, or operations.",
+  "row_counts": {
+    "Users": 4100,
+    "ActivityMonthly": 29109,
+    "Trades": 21969,
+    "WalletTransactions": 5815,
+    "SIPInstallments": 641,
+    "Campaigns": 192,
+    "ModelValidation": 1
+  },
+  "model_validation": {
+    "metric": "Temporal holdout (Sep 2026 features \u2192 Oct 2026 inactivity)",
+    "sample_size": 3623,
+    "positive_rate": 0.5669,
+    "roc_auc": 0.7702,
+    "pr_auc": 0.7937,
+    "brier_score": 0.1973,
+    "train_snapshots": 40812,
+    "predictive_target": "No recorded app activity in subsequent calendar month",
+    "scope": "Synthetic data only; not validated on real customers",
+    "model": "Logistic regression with standard scaling and one-hot encoding"
+  },
+  "metric_definitions": {
+    "activation": "Among users who signed up in the selected FY, percent with first trade on or before dataset end.",
+    "M1_retention": "For signup cohorts with a fully observed subsequent calendar month, share with >=1 recorded app session in month M1.",
+    "FY": "Indian financial year, 1 April through 31 March; FY2026-27 data only through 13 Nov 2026.",
+    "trading_volume": "Sum of synthetic executed trade notional (INR) during report period.",
+    "fee_revenue": "Sum of synthetic trading fees (INR), not profit.",
+    "CAC": "Non-organic campaign spend divided by new users acquired in the same FY and channel. Simplified channel-attributed CAC.",
+    "marketing_return_proxy": "(68% of attributed trading fee revenue minus marketing spend)/marketing spend, illustrative contribution ratio, not actual ROI.",
+    "churn_model": "Logistic regression trained on prior monthly snapshots with following-month activity as outcome; scores anchored to Oct 2026 snapshot."
+  }
+}
